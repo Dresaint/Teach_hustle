@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Banda+Niera&display=swap');
+
+
+/* General Styling */
+body {
+    margin: 0;
+    font-family: 'Banda niera', sans-serif;
+    
+  }
+  
+  
+  /* Hero Section */
+  .hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #fff8e7;
+  }
+  
+  .hero-content {
+    flex: 1;
+    margin-right: 400px;
+    text-align: center;
+  }
+  
+  .hero-content h1 {
+    font-size: 45px;
+    font-weight: bold;
+  }
+  
+  .hero-content p {
+    margin: 10px 0 20px;
+    font-size: 20px;
+  }
+  
+  .hero-content button {
+    background-color: #f4a641;
+    color: white;
+    font-weight: bold;
+    padding: 10px 55px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 15px;
+  }
+  
+  .hero-images img {
+    width: 500px;
+    height: auto;
+   margin-right: 50px;
+  }
+  
+  /* Scholarship Update Section */
+  .scholarship-update {
+    display: flex;
+    background-color: white;
+    padding: 40px 0px;
+    
+   
+    justify-content: space-around;
+  }
+  
+  .scholarship-update img {
+    width: 300px;
+    height: auto;
+    border-radius: 35px;
+  }
+  
+  .update-content {
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: antiquewhite;
+    border-radius: 35px;
+     
+  }
+  
+  .update-content h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .update-content p {
+    font-size: 18px;
+    color: #333;
+    
+    
+  }
+  
+  .stats {
+    display: flex;
+    justify-content: space-around;
+    padding: 0.1rem 0;
+    padding-bottom: 30px;
+   
+   
+  }
+  
+  .stats-item {
+    
+  }
+  
+  .stats-item h2 {
+    font-size: 2.5rem;
+    
+  }
+  
+  .stats-item p {
+    font-size: 1.2rem;
+    color: #757272;
+    font-weight: lighter;
+    padding-right:20px  ;
+  }
+  
+  .buttons button {
+    margin-right: 10px;
+    background-color: #f4a641;
+    color: white;
+    padding: 10px 35px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 0.rem;
+  }
+  
+  .buttons button:last-child {
+    background-color: white;
+    border: 2px solid #f4a641;
+    color: #f4a641;
+  }
+  
+  /* How It Works Section */
+  .how-it-works {
+    
+  padding: 0px 110px;
+  padding-top: 50px;
+  padding-bottom: 10px;
+  }
+  
+  .how-it-works h2 {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .how-it-works p {
+    text-align: center;
+    padding-bottom: 40px;
+  }
+  
+  .steps {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 100px;
+  }
+  
+  .step-image{
+    background-color: transparent;
+  }
+  
+  .step span {
+    font-size: 28px;
+    color: #f4a641;
+  }
+  
+  .step h3 {
+    font-size: 30px;
+    
+  }
+  
+  .step button{
+    margin-top: 10px;
+    background-color: white;
+    border: 1px solid #666;
+    border-radius: 15px;
+    padding: 10px 20px;
+  }
+  
+  /* Pricing Plans Section */
+  .wait{
+    text-align: center;
+  }
+  .tick{
+    font-size: 15px;
+    font-weight: lighter;
+    padding: 0px 7px;
+  }
+  .pricing-plans {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+  }
+  
+  
+  .pricing-card {
+    width: 35%;
+    padding: 30px;
+    border-radius: 25px 0px 25px 0px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .yellow-card {
+    background-color: #fff8e7;
+  }
+  
+  .purple-card {
+    background-color: #d9c1f2;
+  }
+  
+  .pricing-card h3 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .pricing-card h2 {
+    font-size: 28px;
+    margin: 20px 0;
+  }
+  
+  .pricing-card ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .pricing-card ul li {
+    margin: 10px 0;
+    font-size: 16px;
+  }
+  
+  .pricing-card button {
+    background-color: #f4a641;
+    color: white;
+    padding: 10px 80px;
+    border: none;
+     border-radius: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+
+  }
+  
+  /* Media Queries for responsiveness */
+  @media (max-width: 768px) {
+    .hero-section {
+      flex-direction: column;
+      align-items: center;
+      background-color: #fff8e7;
+      
+    }
+    .hero-content{
+      width: 400px;
+      text-align: center;
+      margin-right: 0px;
+
+    }
+   
+    .hero-images img {
+      width: 400px;
+     
+      
+    }
+  
+    .scholarship-update {
+      flex-direction: column;
+      align-items: center;
+    } 
+  
+    .scholarship-update img {
+      margin-bottom: 20px;
+      width: 400px;
+    }
+    .update-content{
+      margin: 0px 5px;
+    }
+  
+    .steps {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .step {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  
+    .pricing-plans {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .pricing-card {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero-content h1 {
+      font-size: 24px;
+    }
+  
+    .hero-content p {
+      font-size: 16px;
+    }
+  
+    .hero-content button {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  
+    .update-content h2 {
+      font-size: 24px;
+    }
+  
+    .update-content p {
+      font-size: 16px;
+    }
+  
+    .pricing-card h2 {
+      font-size: 24px;
+    }
+  }
+  

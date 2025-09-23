@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+body{
+    font-family: 'PT Serif', serif;
+}
+
+
+
+
+.about-us {
+    font-family: "PT Serif";
+    padding: 2rem;
+    
+  }
+  
+  /* Introduction Section */
+  .about-intro {
+    text-align: center;
+    padding: 2rem 0;
+    background-color:   #fff8e7;
+    margin-bottom: 2rem;
+  }
+  
+  .about-intro h1 {
+    font-size: 2rem;
+    color: #212121;
+    font-family: "PT Serif";
+  }
+  
+  .about-intro p {
+    font-size: 1.2rem;
+    color: #666;
+    
+    
+  }
+  
+  .ratings {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  /* Mission and Vision Section */
+ 
+
+  .head{
+    display: flex;
+    justify-content: space-between;
+    gap: 6rem;
+    margin-bottom: 20px;
+  }
+  .mission-vision{
+    padding-left: 20px;
+
+  }
+  .text p{
+    margin-right: 200px;
+    font-family: "PT Serif";
+  }
+
+  
+  .mission {
+    display: flex;
+    justify-content: space-between;
+    gap: 6rem;
+    margin-bottom: 20px;
+  
+  }
+
+  .mission h3{
+    margin-right: 100px;
+    font-family: "PT Serif";
+  }
+
+  .imm{
+    margin-right: 250px;
+  }
+  .vision{
+    display: flex;
+    justify-content: space-between;
+    gap: 6rem;
+    margin-bottom: 20px;
+  }
+
+  .vision h3{
+    margin-right: 350px;
+    font-family: "PT Serif";
+  }
+
+  .vision p{
+    margin-right: 290px;
+    font-family: "PT Serif";
+  }
+
+  
+  .mission img,
+  .vision img,
+  .head img {
+    
+    border-radius: 15px;
+    margin-top: 1rem;
+  }
+  
+
+
+  /* Meet Our Team Section */
+  .team {
+    background-color:   #fff8e7;
+    padding: 2rem 0;
+    text-align: center;
+  }
+  
+  .team h1 {
+    color: #212121;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-family: "PT Serif";
+  }
+
+  .team p{
+    columns: #212121;
+    text-align: center;
+    font-family: "PT Serif";
+  }
+
+  .y{
+    text-align: center;
+    
+  }
+  
+  .team-members {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+
+  .z{
+    display: none;
+  }
+  
+  
+  
+  .team-member img {
+    max-width: 100%;
+    border-radius: 9px;
+    margin-bottom: 1rem;
+  }
+  
+  .team-member h3 {
+    color:  #D89531;
+  }
+  
+  .team-member p {
+    color: #212121;
+    font-family: "PT Serif";
+  }
+  
+  .enroll-now-btn {
+    padding: 0.55rem 7rem;
+    background-color:    #fff8e7;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 2rem;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .mission-vision {
+        flex-direction: column;
+    
+    }
+    .mission-vision{
+        padding-left: 15px;
+        
+    }
+    .head{
+        gap: 1.5rem;
+    }
+    .mission{
+        gap: 1.5rem;
+    }
+    .vision{
+        gap: 1.5rem;
+    }
+    .mission p {
+        margin-right: 0px;
+    }
+   .mission h3{
+    margin-right: 0px
+   }
+   .imm{
+    margin-right: 0px;
+   }
+
+   .vision h3{
+    margin-right: 10px;
+   }
+   .vision p{
+    margin-right: 80px;
+   }
+   .head p{
+    margin-right: 30px;
+   }
+
+
+
+
+    .mission-vision img{
+        width: 250px;
+        height: 250px;
+    }
+  
+  
+    
+    .y{
+        display: none;
+    }
+    .z{
+        text-align: center;
+        display: contents;
+        
+    }
+
+    .team-member img{
+        margin-top: 15px;
+    }
+  
+  }

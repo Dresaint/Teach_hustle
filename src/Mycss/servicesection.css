@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+body{
+    font-family: 'PT Serif', serif;
+}
+
+
+.services {
+    padding: 3rem 2rem;
+    background-color:     #fff8e7; 
+    align-items: center;
+    
+}
+ 
+.services h2 {
+    font-size: 2rem;
+    text-align: center;
+    color:  #212121;
+}
+
+.services p {
+    text-align: center;
+    color:  #212121;
+    margin-bottom: 2rem;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    justify-items: center;
+    
+}
+
+.service-item {
+    background-color: #FFFFFF;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 25px;
+    transition: transform 0.3s ease;
+    max-width: 60%;
+}
+
+
+.service-items{
+    background-color: #D89531;
+    color: #FFFFFF;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 25px;
+    transition: transform 0.3s ease;
+    max-width: 60%;
+    
+
+}
+
+
+.service-items p{
+    color: #FFFFFF;
+}
+.service-items h3{
+    color: #FFFFFF;
+}
+
+.service-items svg{
+    color: #FFFFFF;
+    align-items: flex-start;
+}
+
+
+.service-item h3 {
+    font-size: 1.5rem;
+    color:   #D89531;
+}
+
+.service-item p {
+    color:   #D89531;
+}
+
+.service-item:hover {
+    transform: translateY(-5px);
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
+    .service-item{
+        max-width: 70%;
+
+       
+    }
+    .service-items{
+        max-width: 70%;
+    }
+}

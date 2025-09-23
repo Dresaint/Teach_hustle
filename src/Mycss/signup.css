@@ -1,0 +1,150 @@
+ @import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+body{
+    font-family: 'PT Serif', serif;
+}
+
+ Basic styling for the sign-up form 
+.signup-section {
+    display: flex;
+    justify-content: center;
+
+    background-color: white;
+  }
+  
+  .signup-container {
+    width: 100%;
+    max-width: 600px;
+    background-color: white;
+    
+    border-radius: 10px;
+    
+  }
+  
+  .signup-container img{
+    padding-bottom: 40px;
+    width: 300px;
+
+  }
+
+  .signup-title {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .signup-description {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .input-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    
+  }
+  
+  .signup-input {
+    flex: 1;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 230);
+  }
+  
+  .terms {
+    display: flex;
+    align-items: center;
+  }
+  
+  .terms-checkbox {
+    margin-right: 10px;
+  }
+  
+  .link {
+    color: #D89531;
+    cursor: pointer;
+  }
+
+  .link a{
+    text-decoration: none;
+    color: #D89531;
+  }
+  
+  .signup-btn {
+    background-color: #D89531;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    font-size: 1.1rem;
+    cursor: pointer;
+  }
+  
+  .signin-link {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+    
+  .social-signup button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+   
+    border-radius: 15px;
+    border: 1px solid #706d6d;
+    background-color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 10px;
+    
+   
+  
+  }
+  
+  .social-signup button img {
+    width: 20px;
+    margin-right: 10px;
+    padding: 0px;
+    
+    
+  }
+  
+  .social-btn {
+    
+    padding: 10px 0px;
+
+  }
+  .social-signup a{
+    text-decoration: none;
+
+  }
+
+  
+ 
+  
+  
+  
+  Responsive Design 
+  @media (max-width: 768px) {
+    .input-row {
+      flex-direction: column;
+    }
+  
+    .signup-btn, .social-btn {
+      width: 100%;
+    }
+
+
+  }
+   

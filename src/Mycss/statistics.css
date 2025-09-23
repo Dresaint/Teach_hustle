@@ -1,0 +1,54 @@
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+body{
+    font-family: 'PT Serif', serif;
+}
+
+.statistics {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 0;
+    background-color: #fff;
+    margin: 0px 150px;
+    transition: transform 0.3s ease;
+    
+    
+  }
+
+  .statistics :hover{
+    transform: translateY(-5px);
+  }
+  
+  .stat-item {
+    text-align: center;
+  
+  }
+  
+  .stat-item h2 {
+    font-size: 2.5rem;
+    color:   #D89531;
+    margin-bottom: 0.5rem;
+  }
+  
+  .stat-item p {
+    font-size: 1.2rem;
+    color:  #212121;
+  }
+  
+  /* Media Query for Smaller Screens */
+  @media (max-width: 768px) {
+    .statistics {
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+    }
+  
+    .stat-item h2 {
+      font-size: 2rem;
+    }
+  
+    .stat-item p {
+      font-size: 1rem;
+    }
+  }
+  

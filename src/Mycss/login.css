@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+
+
+
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f8f8;
+    font-family: 'PT Serif', serif;
+    padding-top: 50px;
+  }
+  
+  body {
+    font-family: 'PT Serif', serif;
+    
+  }
+
+  .login-content {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 400px;
+    text-align: center;
+  }
+  
+  .logo img {
+    width: 150px;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    margin-bottom: 20px;
+    color: #212121;
+  }
+  
+  .login-form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 12px;
+    border: 2px solid  #D89531 ;
+  }
+  
+  .remember-me {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    
+  }
+  
+  .remember-me input {
+    margin-right: 10px;
+
+  }
+  
+  .send-code-btn {
+    background-color:  #D89531;
+    border: none;
+    color: #fff;
+    padding: 10px 0;
+    border-radius: 15px;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+  .forgot-password {
+    display: block;
+    margin-bottom: 20px;
+    color:  #D89531;
+    text-decoration: none;
+  }
+  
+  .or-divider {
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .or-divider span {
+    background-color: #fff;
+    padding: 0 10px;
+    color: #666;
+  }
+  
+  .or-divider:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #ddd;
+    z-index: -1;
+  }
+  
+  .social-login button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 15px;
+    border: 1px solid #706d6d;
+    background-color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-decoration: none;
+  }
+  
+  .social-login button img {
+    width: 20px;
+    margin-right: 10px;
+  }
+  .social-login a{
+    text-decoration: none;
+  }
+  
+  .google-btn {
+    border-color: #333;
+    color: #333;
+    text-decoration: none;
+
+  }
+  
+  .apple-btn {
+    border-color: #333;
+    color: #333;
+    text-decoration: none;
+  }
+  
