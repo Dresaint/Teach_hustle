@@ -1,12 +1,12 @@
 import {BrowserRouter, Routes, Route } from 'react-router-dom';
-import React from 'react'
-import Home from "./pages/home"
-import About from './pages/aboutUs'
-import Courses from './pages/courses'
-import LogIn from './pages/login'
-import Scholarship from './pages/scholarship'
-import Contact from './pages/contactUs'
-import SignUp from './pages/signup'
+import React from 'react';
+import Home from "./pages/home";
+import About from './pages/aboutUs';
+import Courses from './pages/courses';
+import LogIn from './pages/login';
+import Scholarship from './pages/scholarship';
+import Contact from './pages/contactUs';
+import SignUp from './pages/signup';
 import AboutUs from './pages/aboutUs';
 import OTPPage from './pages/otp';
 import ForgetPassword from './pages/forgetpassword';
@@ -14,6 +14,8 @@ import Form from './pages/form';
 import Success from './components/success';
 import Teachers from './pages/teachers';
 import Mine from './pages/mine';
+import ContactTeacher from './pages/contactTeacher';
+
 
 
 
@@ -37,6 +39,7 @@ const App = () => {
               <Route path ='/success' element = {<Success/>}/>
               <Route path ='/teachers' element = {<Teachers />}/>
               <Route path ='/mine' element = {<Mine/>} />
+              <Route path ="/teachers/:id/contact" element={<ContactTeacher />} />
               
               
         </Routes>

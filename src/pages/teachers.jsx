@@ -1,92 +1,44 @@
-import React from 'react'
-import Header from '../components/header';
-import '../Mycss/teachers.css';
-import Meet from '../assets/teachers.jpg';
-import FOOTER from '../components/footer';
+import React from "react";
+import { Link } from "react-router-dom";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import teachers from "../data/teachersData"; // ✅ import shared data
 
-const teachers = () => {
+const Teachers = () => {
   return (
-    
-    <>
-     <Header />
-       
-        <section>
-            <div className='meet'>
-                <h1>Meet the awesome TEACHERS and connect with them!!!</h1>
+    <div className="min-h-screen flex flex-col">
+      <Header />
 
+      <main className="flex-grow max-w-7xl mx-auto px-4 py-10">
+        <h1 className="text-3xl font-bold text-center mb-4">
+          Meet the awesome <span className="text-purple-600">TEACHERS</span> and connect with them!
+        </h1>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-10">
+          {teachers.map((teacher) => (
+            <div
+              key={teacher.id}
+              className="flex flex-col items-center bg-white rounded-2xl shadow-md p-4"
+            >
+              <img
+                src={teacher.image}
+                alt={teacher.name}
+                className="w-full h-60 object-cover rounded-xl"
+              />
+              <Link
+                to={`/contact-teacher/${teacher.id}`}
+                className="mt-4 bg-yellow-500 hover:bg-yellow-600 text-white px-4 py-2 rounded-lg text-center w-full"
+              >
+                Connect Now
+              </Link>
             </div>
-            <div className='teachers'>
-               <div className='teach'>
-                    <img src={Meet} alt="teachers" />
-                    <h2>JAVASCRIPTS</h2>
-                    <button><a href="">Connect Now</a></button>
-                </div>
+          ))}
+        </div>
+      </main>
 
-                <div>
-                    <img src={Meet} alt="teachers" />
-                    <h2>SOCIA MEDIA MANAGEMENT</h2>
-                    <button><a href="">Connect Now</a></button>
-                </div>
+      <Footer />
+    </div>
+  );
+};
 
-                <div>
-                    <img src={Meet} alt="teachers" />
-                    <h2>FOREX TRADING</h2>
-                    <button><a href="">Connect Now</a></button>
-                </div>
-
-                <div>
-                    <img src={Meet} alt="teachers" />
-                    <h2>DATA ANALYTICS</h2>
-                    <button><a href="">Connect Now</a></button>
-                </div>
-
-                <div>
-                    <img src={Meet} alt="teachers" />
-                    <h2>BACKEND DEVELOPER</h2>
-                    <button><a href="">Connect Now</a></button>
-                </div>
-
-                <div>
-                    <img src={Meet} alt="teachers" />
-                    <h2>FRONTEND DEVELOPER</h2>
-                    <button><a href="">Connect Now</a></button>
-                </div>
-
-                <div>
-                    <img src={Meet} alt="teachers" />
-                    <h2>REACT JS</h2>
-                    <button><a href="">Connect Now</a></button>
-                </div>
-
-                <div>
-                    <img src={Meet} alt="teachers" />
-                    <h2>CYRPTO TRADING</h2>
-                    <button><a href="">Connect Now</a></button>
-                </div>
-
-                <div>
-                    <img src={Meet} alt="teachers" />
-                    <h2>PYTHON</h2>
-                    <button><a href="">Connect Now</a></button>
-                </div>
-
-
-
-
-
-
-
-
-
-
-            </div>
-
-        </section>
-
-        <FOOTER/>
-
-    </>
-  )
-}
-
-export default teachers
+export default Teachers;
