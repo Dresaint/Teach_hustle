@@ -5,7 +5,7 @@ import Header from '../components/header';
 import Footer from '../components/footer';
 import ContactSection from '../components/contactSection.jsx';
 import image1 from '../assets/aboutimage1.avif';
-import image2 from '../assets/aboutimage-2.avif';
+import image2 from '../assets/aboutlmage-2.avif';
 import image3 from '../assets/aboutima.webp';
 import image4 from '../assets/aboutima2.webp';
 import image5 from '../assets/aboutima3.webp';
